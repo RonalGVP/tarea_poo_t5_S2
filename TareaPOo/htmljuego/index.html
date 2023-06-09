@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Juego </title>
+    <link rel="stylesheet" href="./estilos/styles.css">
+    <script src="https://kit.fontawesome.com/36085e0238.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header>
+        <h1>Piedra papel o tijera</h1>
+        <p>Tarea grupal de POO</p>
+    </header>
+    <main>
+        <p class="instrucciones" id="instrucciones">Gana el primero en llegar a 5 puntos</p>
+        <div class="score">
+            <p class="nombre nombre-jugador">Jugador <span><i class="fa-sharp fa-solid fa-person"></i></span></p>
+            <p class="nombre nombrecomputadora">Computadora <span><i class="fa-solid fa-computer"></i></span></p>
+            <p class="puntos">
+                <span id="user-score">0</span>
+                <span>-</span>
+                <span id="pc-score">0</span>
+            </p>
+        </div>
+        <div class="elegir-arma" id="elegir-arma">
+            <h2 id="pregunta">¿Qué vas a usar en tu proximo turno?</h2>
+            <div class="armas">
+                <button class="arma"id="piedra" ><span class="tools"><i class="fa-regular fa-hand-back-fist fa-2xl fa-bounce " style="color: rgb(3, 59, 59);"></i></span></button>
+                <button class="arma" id="papel" ><span class="tools"><i class="fa-regular fa-hand fa-2xl fa-bounce "style="color: rgb(3, 59, 59);"></i></span></button>
+                <button class="arma" id="tijera" ><span class="tools" ><i class="fa-regular fa-hand-scissors fa-2xl fa-bounce" style="color: rgb(3, 59, 59);"></i></span></button>
+            </div>
+        </div>
+        <div class="mensaje disabled" id="mensaje">
+                <p>Usaste <span class="eleccion" id="jugador-eleccion">Papel</span> <br>
+                    y la computadora uso <span class="eleccion" id="pc-eleccion">Piedra</span>
+                </p>
+                <p id="win">Ganaste un punto🔥</p>
+                <button class="btn" id="reiniciar">Reiniciar la partida</button>
+                <!-- Salir-->
+                <button class="btn" id="salir">Salir de la partida</button></div>
+        <!-- Estadisticas y salir juego--> 
+        
+
+        <div id="estadisticas" class="disabled">
+            <p>Partidas ganadas por el jugador: <span id="ganajugador">0</span></p>
+            <p>Partidas ganadas por la computadora: <span id="ganacomputador">0</span></p>
+        </div>          
+        
+    </main>
+    <script src="./codigo/main.js"></script>
+</body>
+</html>

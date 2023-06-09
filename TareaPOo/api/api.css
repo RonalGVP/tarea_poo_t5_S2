@@ -1,0 +1,144 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	font-family: 'Montserrat', sans-serif;
+	background: #e0e0e0;
+	color: #1d1d1d;
+}
+
+.logo {
+	
+    width: 300px;
+}
+
+header {
+    background-color: #241744;
+    display: flex;
+	justify-content: center;
+    gap: 10px;
+    grid-gap: 10px;
+	align-content: center center;
+}
+
+.contenedor {
+	width: 90%;
+	max-width: 1000px;
+	margin: 40px auto 100px auto;
+
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+	gap: 40px;
+}
+
+.contenedor .pelicula {
+	text-align: center;
+}
+
+.contenedor .pelicula .titulo {
+	font-size: 16px;
+	font-weight: 600;
+}
+
+.contenedor .pelicula .poster {
+	width: 100%;
+	margin-bottom: 10px;
+	border-radius: 15px;
+}
+
+.paginacion {
+	position: fixed;
+	bottom: 0;
+	background: #100a1f;
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	gap: 20px;
+	padding: 10px;
+}
+
+.paginacion button {
+	cursor: pointer;
+	border: none;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+	height: 50px;
+	width: 200px;
+	background: #241744;
+	color: #fff;
+	border-radius: 100px;
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 600;
+	transition: .3s ease all;
+}
+
+.ver-mas {
+    cursor: pointer;
+	border: none;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+	height: 50px;
+	width: 200px;
+	background: #241744;
+	color: #fff;
+	border-radius: 100px;
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 600;
+	transition: .3s ease all;
+}
+
+.ver-mas:hover {
+    background: rgba(52, 184, 153, 0.72);
+    color: black
+}
+
+.paginacion button:hover {
+	background: #137c32;
+}
+
+
+.informacion {
+	width: 100%;
+    height: 100vh;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 1fr 1fr ;
+	grid-template-areas: 
+    "caja1  caja2	caja2"
+    "caja1  caja2	caja2"
+	;
+}
+
+.caja1 {
+    grid-area: caja1;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    padding: 20px;
+    gap: 10px;  
+}
+
+.caja2 {
+    grid-area: caja2;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    padding: 20px;
+    gap: 10px;
+
+    
+}
+
+.poster-new {
+	width: 300px;
+	height: 500px;
+	border-radius: 20px;
+}
+

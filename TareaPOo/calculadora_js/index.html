@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora</title>
+    
+    <link href="https://fonts.googleapis.com/css2?family=Fraunces:wght@100&family=Kanit:ital,wght@0,300;0,600;0,800;1,100&family=Nunito:wght@200;300;400;500;600;700;800;900&family=Ubuntu:wght@300;400;700&display=swap" rel="stylesheet">
+   <link rel="stylesheet" href="css/index_css.css">
+   <script src="./js_calculadora/funcionalidad_calculadora.js" type="text/javascript"></script>
+   <script src="./js_calculadora/calculadora.js" type="text/javascript" defer></script>
+   <script src="js_calculadora/display.js" type="text/javascript"></script>
+</head>
+<body>
+    <div class="Contenedor">
+    <div class="Calculadora">
+    <div class="Display">
+    <div id="valor1"></div>
+    <div id="valor2"></div>
+</div>
+
+<button  onclick="display.borrar_todo()" class="col-2" > C </button>
+<button onclick="display.borrar()">&larr;</button>
+<button class="operador" value="residuo">%</button>
+<button class="numero">7</button>
+<button class="numero">8</button>
+<button class="numero">9</button>
+<button class="operador" value="multiplicar">X</button>
+<button class="numero">4</button>
+<button class="numero">5</button>
+<button class="numero">6</button>
+<button class="operador" value="resta">-</button>
+<button class="numero">1</button>
+<button class="numero">2</button>
+<button class="numero">3</button>
+<button class="operador" value="suma">+</button>
+<button class="col-2 numero">0</button>
+<button class="numero">.</button>
+<button class="operador" value="dividir">/</button>
+<button class="operador" value="division_entera"> DIV </button>
+<button class="operador_rapido" value="raiz_cuadrada">&#8730;</button>
+<button class="operador" value="exponente">EXP</button>
+<button class="operador_rapido" value="factos">!N</button>
+<button class="operador_rapido" value="divisores">:</button>
+<button class="operador" value="igual">=</button>
+    </div>
+</div>    
+</body>
+</html>
